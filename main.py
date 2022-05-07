@@ -553,7 +553,7 @@ def onmessage(update,bot:ObigramClient):
                     if user_info:
                         user_info['proxy'] = ''
                         statInfo = infos.createStat(username,user_info,jdb.is_admin(username))
-                    b   ot.sendMessage(update.message.chat.id,statInfo)
+                    bot.sendMessage(update.message.chat.id,statInfo)
             return
         if '/dir' in msgText:
             preview = jdb.preview(username)
