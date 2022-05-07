@@ -518,9 +518,9 @@ def onmessage(update,bot:ObigramClient):
             return
         if '/uptype' in msgText:
            preview = jdb.preview(username)
-            if preview:
+           if preview:
                 bot.sendMessage(update.message.chat.id, f'❌Usted está en modo preview❌')
-            else:
+           else:
                 try:
                     cmd = str(msgText).split(' ',2)
                     type = cmd[1]
