@@ -533,7 +533,7 @@ def onmessage(update,bot:ObigramClient):
                         bot.sendMessage(update.message.chat.id,statInfo)
                 except:
                     bot.sendMessage(update.message.chat.id,'❌Error en el comando /uptype (typo de subida (evidence,draft,blog,calendar,perfil))❌')
-            return
+           return
         if '/proxy' in msgText:
             preview = jdb.preview(username)
             if preview:
